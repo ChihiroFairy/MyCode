@@ -1,0 +1,27 @@
+#include "page.h"
+#include "ui_settings.h"
+
+Settings::Settings(QWidget *parent) :
+    QWidget(parent),
+    ui(new Ui::Settings)
+{
+    ui->setupUi(this);
+
+    /*返回主页面*/
+    connect(ui->exitButton,&QPushButton::clicked,[=](){
+        emit back();
+    });
+    /*跳转至串口设置页面*/
+    portSets = PortSettings::get_ins();
+    connect(ui->portSet_Button,&QPushButton::clicked,[=](){
+        portSets->show();
+    });
+    connect(portSets,&PortSettings::back,[=](){
+        portSets->hide();
+    });
+}
+
+Settings::~Settings()
+{
+    delete ui;
+}

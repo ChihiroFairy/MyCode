@@ -1,0 +1,25 @@
+#ifndef PAGE01_SUB_H
+#define PAGE01_SUB_H
+
+#include <QDialog>
+
+namespace Ui {
+class PageClose_sub;
+}
+
+class Page01_sub : public QDialog
+{
+    Q_OBJECT
+
+public:
+    explicit Page01_sub(QWidget *parent = nullptr);
+    ~Page01_sub();
+signals:
+    //返回主界面
+    void back();
+
+private:
+    Ui::Page01_sub *ui;
+};
+
+#endif // PAGE01_SUB_H

@@ -1,0 +1,38 @@
+<RCC>
+    <qresource prefix="/new/icon">
+        <file>icon/plus.png</file>
+        <file>icon/minus.png</file>
+        <file>icon/start.png</file>
+        <file>icon/settings.png</file>
+        <file>icon/server_cloud.png</file>
+        <file>icon/search.png</file>
+        <file>icon/save.png</file>
+        <file>icon/running.png</file>
+        <file>icon/return.png</file>
+        <file>icon/precision.png</file>
+        <file>icon/power.png</file>
+        <file>icon/mode.png</file>
+        <file>icon/info.png</file>
+        <file>icon/home.png</file>
+        <file>icon/edit.png</file>
+        <file>icon/delete.png</file>
+        <file>icon/contents.png</file>
+        <file>icon/clean.png</file>
+        <file>icon/cancel_1.png</file>
+        <file>icon/11.jpg</file>
+        <file>icon/speed.png</file>
+        <file>icon/air valve.png</file>
+        <file>icon/按钮.png</file>
+        <file>icon/联网.png</file>
+        <file>icon/rectangle.png</file>
+        <file>icon/circle.png</file>
+        <file>icon/设置-系统设置.png</file>
+        <file>icon/类别.png</file>
+        <file>icon/分割 (2).png</file>
+        <file>icon/信号.png</file>
+        <file>icon/串口设置.png</file>
+        <file>icon/opt-lighting.png</file>
+        <file>icon/照明.png</file>
+        <file>icon/分割.png</file>
+    </qresource>
+</RCC>

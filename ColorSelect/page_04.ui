@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Page_04</class>
+ <widget class="QWidget" name="Page_04">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow,QWidget{background-color:#1b898b}
+</string>
+  </property>
+  <widget class="QPushButton" name="exitButton">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>480</y>
+     <width>100</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返回主界面</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="autoClean_Button">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>160</y>
+     <width>131</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>定时清灰</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="manualClean_Button">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>280</y>
+     <width>131</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>手动清灰</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="interval_spinBox">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>170</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox::up-button {
+	subcontrol-origin:border;
+    subcontrol-position:right;
+ 	image: url(:/new/icon/icon/plus.png);
+    width: 50px;
+    height: 50px;       
+}
+QSpinBox::down-button {
+	subcontrol-origin:border;
+    subcontrol-position:left;
+ 	image: url(:/new/icon/icon/minus.png);
+    width: 50px;
+    height: 50px; 
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="cycle_spinBox">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>290</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox::up-button {
+	subcontrol-origin:border;
+    subcontrol-position:right;
+ 	image: url(:/new/icon/icon/plus.png);
+    width: 50px;
+    height: 50px;       
+}
+QSpinBox::down-button {
+	subcontrol-origin:border;
+    subcontrol-position:left;
+ 	image: url(:/new/icon/icon/minus.png);
+    width: 50px;
+    height: 50px; 
+}
+</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

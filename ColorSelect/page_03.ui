@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Page_03</class>
+ <widget class="QWidget" name="Page_03">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow,QWidget{background-color:#1b898b}
+</string>
+  </property>
+  <widget class="QPushButton" name="exitButton">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>480</y>
+     <width>100</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返回主界面</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="customDelay_spin">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>40</y>
+     <width>231</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox::up-button {
+	subcontrol-origin:border;
+    subcontrol-position:right;
+ 	image: url(:/new/icon/icon/plus.png);
+    width: 50px;
+    height: 50px;       
+}
+QSpinBox::down-button {
+	subcontrol-origin:border;
+    subcontrol-position:left;
+ 	image: url(:/new/icon/icon/minus.png);
+    width: 50px;
+    height: 50px; 
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="modelDelay_spin">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>120</y>
+     <width>231</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox::up-button {
+	subcontrol-origin:border;
+    subcontrol-position:right;
+ 	image: url(:/new/icon/icon/plus.png);
+    width: 50px;
+    height: 50px;       
+}
+QSpinBox::down-button {
+	subcontrol-origin:border;
+    subcontrol-position:left;
+ 	image: url(:/new/icon/icon/minus.png);
+    width: 50px;
+    height: 50px; 
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="reTime_spin">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>190</y>
+     <width>231</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox::up-button {
+	subcontrol-origin:border;
+    subcontrol-position:right;
+ 	image: url(:/new/icon/icon/plus.png);
+    width: 50px;
+    height: 50px;       
+}
+QSpinBox::down-button {
+	subcontrol-origin:border;
+    subcontrol-position:left;
+ 	image: url(:/new/icon/icon/minus.png);
+    width: 50px;
+    height: 50px; 
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="time_spin">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>270</y>
+     <width>231</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox::up-button {
+	subcontrol-origin:border;
+    subcontrol-position:right;
+ 	image: url(:/new/icon/icon/plus.png);
+    width: 50px;
+    height: 50px;       
+}
+QSpinBox::down-button {
+	subcontrol-origin:border;
+    subcontrol-position:left;
+ 	image: url(:/new/icon/icon/minus.png);
+    width: 50px;
+    height: 50px; 
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="singleChe_Button">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>370</y>
+     <width>131</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>单检</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="multiChe_Button">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>370</y>
+     <width>131</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>多检</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>50</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;常规延时：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>130</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;模型延时：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>200</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;重吹时间：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>280</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;吹气时间：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="saveButton">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>480</y>
+     <width>100</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>保存修改</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

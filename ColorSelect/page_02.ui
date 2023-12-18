@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Page_02</class>
+ <widget class="QWidget" name="Page_02">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow,QWidget{background-color:#1b898b}
+</string>
+  </property>
+  <widget class="QDoubleSpinBox" name="speedAdj_DoubleSpinBox">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>150</y>
+     <width>250</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox::up-button {
+	subcontrol-origin:border;
+    subcontrol-position:right;
+ 	image: url(:/new/icon/icon/plus.png);
+    width: 50px;
+    height: 50px;       
+}
+QDoubleSpinBox::down-button {
+	subcontrol-origin:border;
+    subcontrol-position:left;
+ 	image: url(:/new/icon/icon/minus.png);
+    width: 50px;
+    height: 50px; 
+}
+QDoubleSpinBox{
+background-color:#0b7285;
+border-width:5px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="exitButton">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>480</y>
+     <width>100</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返回主界面</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="speedLabel">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>160</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;传送带速度：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="vibratorButton">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>290</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox{border-color: rgb(186, 189, 182);}</string>
+   </property>
+   <property name="text">
+    <string>振动器</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="vibratorAdj_spinBox">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>280</y>
+     <width>250</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox::up-button {
+	subcontrol-origin:border;
+    subcontrol-position:right;
+ 	image: url(:/new/icon/icon/plus.png);
+    width: 50px;
+    height: 50px;       
+}
+QSpinBox::down-button {
+	subcontrol-origin:border;
+    subcontrol-position:left;
+ 	image: url(:/new/icon/icon/minus.png);
+    width: 50px;
+    height: 50px; 
+}
+QSpinBox{
+background-color:#0b7285;
+border-width:5px;
+}</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
