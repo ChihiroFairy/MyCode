@@ -66,7 +66,7 @@ void LogRecorder::openLogFile() {
     currentDate = QDate::currentDate();
     QString fileName = "logfile_" + currentDate.toString("yyyyMMdd") + ".txt";
 
-    // Specify the path where you want to save the log files
+    // 指定保存路径
     QString filePath = "/home/book/Documents/Log for test/" + fileName;
 
     logFile.setFileName(filePath);

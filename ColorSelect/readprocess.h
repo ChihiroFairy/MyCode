@@ -23,6 +23,7 @@ signals:
     /*串口接收到的数据分发信号*/
     void data_Page_01(const QByteArray &data);
     void data_Page_02(const QByteArray &data);
+    void data_Page_05(const QByteArray &data);
 
 public slots:
     void read_Data();//数据接收

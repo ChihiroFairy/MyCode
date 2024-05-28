@@ -10,33 +10,74 @@
     <height>600</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QMainWindow,QWidget{background-color:#1b898b}</string>
+   <string notr="true">QMainWindow,QWidget{background-color:#bdc3c7;}
+</string>
   </property>
   <widget class="QPushButton" name="exitButton">
    <property name="geometry">
     <rect>
-     <x>630</x>
-     <y>480</y>
+     <x>650</x>
+     <y>520</y>
      <width>100</width>
-     <height>60</height>
+     <height>50</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton{
-	border-image: url(:/new/icon/icon/rectangle.png);
+border-radius:10px;
+background:#dedede;
+color:blue;
 }
 QPushButton::pressed{
-border-image: url(:/new/icon/icon/按钮.png);
-}</string>
+background:lightyellow;
+}
+</string>
    </property>
    <property name="text">
     <string>返回</string>
    </property>
   </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>480</y>
+     <width>800</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>480</y>
+     <width>801</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+background:#AAB1B6;
+}</string>
+   </property>
+  </widget>
+  <zorder>widget</zorder>
+  <zorder>exitButton</zorder>
+  <zorder>line</zorder>
  </widget>
  <resources/>
  <connections/>

@@ -9,7 +9,6 @@
         <file>icon/save.png</file>
         <file>icon/running.png</file>
         <file>icon/return.png</file>
-        <file>icon/precision.png</file>
         <file>icon/power.png</file>
         <file>icon/mode.png</file>
         <file>icon/info.png</file>
@@ -20,7 +19,6 @@
         <file>icon/clean.png</file>
         <file>icon/cancel_1.png</file>
         <file>icon/11.jpg</file>
-        <file>icon/speed.png</file>
         <file>icon/air valve.png</file>
         <file>icon/按钮.png</file>
         <file>icon/联网.png</file>
@@ -30,9 +28,34 @@
         <file>icon/类别.png</file>
         <file>icon/分割 (2).png</file>
         <file>icon/信号.png</file>
-        <file>icon/串口设置.png</file>
         <file>icon/opt-lighting.png</file>
         <file>icon/照明.png</file>
         <file>icon/分割.png</file>
+        <file>icon/平均配速.png</file>
+        <file>icon/AI.png</file>
+        <file>icon/算法.png</file>
+        <file>icon/门店设置.png</file>
+        <file>icon/图像识别.png</file>
+        <file>icon/smls icon_串口助手.png</file>
+        <file>icon/camera.png</file>
+        <file>icon/图片管理.png</file>
+        <file>icon/图片.png</file>
+        <file>icon/相机.png</file>
+        <file>icon/图像.png</file>
+        <file>icon/启动 (1).png</file>
+        <file>icon/启动.png</file>
+        <file>icon/保洁费用.png</file>
+        <file>icon/13G关机.png</file>
+        <file>icon/writeprocess.h</file>
+        <file>icon/算法包管理.png</file>
+        <file>icon/模型.png</file>
+        <file>icon/供气阀.png</file>
+        <file>icon/门店设置 (1).png</file>
+        <file>icon/向左.png</file>
+        <file>icon/向右.png</file>
+        <file>icon/复选框-选中.png</file>
+        <file>icon/复选框-未选择.png</file>
+        <file>icon/增加.png</file>
+        <file>icon/减少.png</file>
     </qresource>
 </RCC>

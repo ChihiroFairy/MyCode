@@ -10,54 +10,91 @@
     <height>600</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>HomePage</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QMainWindow,QWidget{background-color:#1b898b}
-</string>
+   <string notr="true">QMainWindow,QWidget{background-color:#bdc3c7;}</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="openButton">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>240</y>
-      <width>100</width>
-      <height>100</height>
+      <x>190</x>
+      <y>190</y>
+      <width>120</width>
+      <height>120</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-border-image: url(:/new/icon/icon/start.png);
+border-radius: 20px;
+border:5px 11c4d4;
+background-repeat:no-repeat;
+background-color:#ADB4B9;
+}
+QPushButton::hover{
+background:lightgray;
 }</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/new/icon/icon/启动 (1).png</normaloff>:/new/icon/icon/启动 (1).png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>100</height>
+     </size>
     </property>
    </widget>
    <widget class="QPushButton" name="closeButton">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>240</y>
-      <width>100</width>
-      <height>100</height>
+      <x>490</x>
+      <y>190</y>
+      <width>120</width>
+      <height>120</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-border-image: url(:/new/icon/icon/power.png);
+border-radius: 20px;
+border:5px 11c4d4;
+background-repeat:no-repeat;
+background-color:#ADB4B9;
+}
+QPushButton::hover{
+background:lightgray;
 }</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/new/icon/icon/13G关机.png</normaloff>:/new/icon/icon/13G关机.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>90</width>
+      <height>90</height>
+     </size>
     </property>
    </widget>
    <widget class="QPushButton" name="page01_Button">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>60</x>
       <y>400</y>
       <width>80</width>
       <height>80</height>
@@ -65,18 +102,34 @@ border-image: url(:/new/icon/icon/power.png);
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-border-image: url(:/new/icon/icon/precision.png);
-border-color:
+border-radius: 20px;
+border:10px;
+border-color:#767676;
+background-repeat:no-repeat;
+background-color:#ADB4B9;
+}
+QPushButton::hover{
+background-color:#bdc3c7;
 }</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/new/icon/icon/算法包管理.png</normaloff>:/new/icon/icon/算法包管理.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>70</width>
+      <height>70</height>
+     </size>
     </property>
    </widget>
    <widget class="QPushButton" name="page02_Button">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>180</x>
       <y>400</y>
       <width>80</width>
       <height>80</height>
@@ -84,18 +137,33 @@ border-color:
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-border-image: url(:/new/icon/icon/speed.png);
-border-color:
+border-radius: 20px;
+border:2px #e3fdfd;
+background-repeat:no-repeat;
+background-color:#ADB4B9;
+}
+QPushButton::hover{
+background-color:#bdc3c7;
 }</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/new/icon/icon/平均配速.png</normaloff>:/new/icon/icon/平均配速.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>65</width>
+      <height>65</height>
+     </size>
     </property>
    </widget>
    <widget class="QPushButton" name="page03_Button">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>300</x>
       <y>400</y>
       <width>80</width>
       <height>80</height>
@@ -103,17 +171,33 @@ border-color:
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-border-image: url(:/new/icon/icon/air valve.png);
+border-radius: 20px;
+border:2px #e3fdfd;
+background-repeat:no-repeat;
+background-color:#ADB4B9;
+}
+QPushButton::hover{
+background-color:#bdc3c7;
 }</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/new/icon/icon/供气阀.png</normaloff>:/new/icon/icon/供气阀.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>65</width>
+      <height>65</height>
+     </size>
     </property>
    </widget>
    <widget class="QPushButton" name="page04_Button">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>420</x>
       <y>400</y>
       <width>80</width>
       <height>80</height>
@@ -121,12 +205,27 @@ border-image: url(:/new/icon/icon/air valve.png);
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-border-image: url(:/new/icon/icon/clean.png);
-border-color:
+border-radius: 20px;
+border:2px #11c4d4;
+background-repeat:no-repeat;
+background-color:#ADB4B9;
+}
+QPushButton::hover{
+background-color:#bdc3c7;
 }</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/new/icon/icon/保洁费用.png</normaloff>:/new/icon/icon/保洁费用.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>65</width>
+      <height>65</height>
+     </size>
     </property>
    </widget>
    <widget class="QPushButton" name="page05_Button">
@@ -140,11 +239,30 @@ border-color:
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-border-image: url(:/new/icon/icon/mode.png);
+border-radius: 20px;
+border:2px #11c4d4;
+background-repeat:no-repeat;
+background-color:#ADB4B9;
+}
+QPushButton::hover{
+background-color:#bdc3c7;
 }</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/new/icon/icon/AI.png</normaloff>:/new/icon/icon/AI.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>70</width>
+      <height>70</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="page06_Button">
@@ -158,37 +276,42 @@ border-image: url(:/new/icon/icon/mode.png);
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	border-image: url(:/new/icon/icon/settings.png);
+border-radius: 20px;
+border:2px #11c4d4;
+background-repeat:no-repeat;
+background-color:#ADB4B9;
+}
+QPushButton::hover{
+background-color:#bdc3c7;
 }</string>
     </property>
     <property name="text">
      <string/>
     </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>50</y>
-      <width>480</width>
-      <height>180</height>
-     </rect>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/new/icon/icon/门店设置 (1).png</normaloff>:/new/icon/icon/门店设置 (1).png</iconset>
     </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel{border-image:url(:/new/icon/icon/11.jpg)}</string>
-    </property>
-    <property name="text">
-     <string/>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>80</x>
       <y>490</y>
       <width>50</width>
       <height>30</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+background:none;
+}</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;精度&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -197,11 +320,16 @@ border-image: url(:/new/icon/icon/mode.png);
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>200</x>
       <y>490</y>
       <width>50</width>
       <height>30</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+background:none;
+}</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;流量&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -210,11 +338,16 @@ border-image: url(:/new/icon/icon/mode.png);
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>320</x>
       <y>490</y>
       <width>50</width>
       <height>30</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+background:none;
+}</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;气阀&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -223,11 +356,16 @@ border-image: url(:/new/icon/icon/mode.png);
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>450</x>
+      <x>440</x>
       <y>490</y>
       <width>50</width>
       <height>30</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+background:none;
+}</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;清灰&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -242,8 +380,13 @@ border-image: url(:/new/icon/icon/mode.png);
       <height>30</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+background:none;
+}</string>
+    </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;模式&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;模型&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_8">
@@ -255,6 +398,11 @@ border-image: url(:/new/icon/icon/mode.png);
       <height>30</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+background:none;
+}</string>
+    </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;设置&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
@@ -262,29 +410,104 @@ border-image: url(:/new/icon/icon/mode.png);
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>340</y>
+      <x>230</x>
+      <y>310</y>
       <width>50</width>
       <height>30</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+background:none;
+}</string>
+    </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;启动&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;启动&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_10">
     <property name="geometry">
      <rect>
-      <x>500</x>
-      <y>340</y>
+      <x>530</x>
+      <y>310</y>
       <width>50</width>
       <height>30</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+background:none;
+}</string>
+    </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;关机&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;关机&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-30</y>
+      <width>801</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+background:lightgray;
+border-radius:10px;
+color:blue;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:72pt; font-weight:600; color:#2e3436;&quot;&gt;色 选 系 统&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>370</y>
+      <width>741</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QMainWindow,QWidget,Widget{
+border:5px;
+background:#B6BCC0;
+border-color: red;
+border-radius:30px;
+}</string>
+    </property>
+   </widget>
+   <zorder>widget</zorder>
+   <zorder>openButton</zorder>
+   <zorder>closeButton</zorder>
+   <zorder>page02_Button</zorder>
+   <zorder>page03_Button</zorder>
+   <zorder>page04_Button</zorder>
+   <zorder>page05_Button</zorder>
+   <zorder>page06_Button</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_9</zorder>
+   <zorder>label_10</zorder>
+   <zorder>label</zorder>
+   <zorder>page01_Button</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -298,6 +521,8 @@ border-image: url(:/new/icon/icon/mode.png);
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections/>
 </ui>

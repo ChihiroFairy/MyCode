@@ -3,6 +3,7 @@
 #include "portcom.h"
 #include "logrecorder.h"
 
+
 // Custom message handler for Qt log messages
 void outputMessage(QtMsgType type, const QMessageLogContext &context, const QString &msg) {
     static QMutex mutex;
@@ -37,6 +38,7 @@ void outputMessage(QtMsgType type, const QMessageLogContext &context, const QStr
 }
 int main(int argc, char *argv[])
 {
+
     QApplication a(argc, argv);
     PortCom portCom;
     // Set the custom message handler

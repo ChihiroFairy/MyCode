@@ -41,7 +41,7 @@ void writeProcess::sendCommand(const QString &functionCode, const QString &data1
  */
 quint8 writeProcess::calculateChecksum(const QByteArray &data) {
     quint8 checksum = 0;
-    for (int i = 0; i < data.size(); ++i) {
+    for (int i = 1; i < data.size(); ++i) {
         checksum ^= static_cast<quint8>(data.at(i));
     }
     return checksum;
@@ -59,7 +59,7 @@ QByteArray writeProcess::createFrame(const QString &functionCode, const QString 
     frame.append(functionCode.toUInt(nullptr, 16));
     frame.append(data1.toUInt(nullptr, 16));
     frame.append(data2.toUInt(nullptr, 16));
-    frame.append(calculateChecksum(frame.left(4)));  // 前4个字节异或校验
+    frame.append(calculateChecksum(frame.left(4)));  // 1 and 2 and 3 字节异或校验
     frame.append(0xFF);  // 帧尾
 
     return frame;

@@ -1,5 +1,6 @@
 #include "page_02.h"
 #include "ui_page_02.h"
+#include <QDesktopWidget>
 
 Page_02::Page_02(QWidget *parent) :
     QWidget(parent),
@@ -8,6 +9,11 @@ Page_02::Page_02(QWidget *parent) :
     ui->setupUi(this);
 
     this->setWindowTitle("流量页面");
+
+    //窗口显示在屏幕正中间
+    QDesktopWidget *homePage = QApplication::desktop();
+    move((homePage->width()-this->width())/2,(homePage->height()-this->height())/2);
+
     /*返回主页面*/
     connect(ui->exitButton,&QPushButton::clicked,[=](){emit back();});
     //******************写处理对象调用***********************
@@ -19,12 +25,13 @@ Page_02::Page_02(QWidget *parent) :
     //当前值为3
     ui->speedAdj_DoubleSpinBox->setValue(3);
     ui->speedAdj_DoubleSpinBox->setSingleStep(0.1);
-    ui->speedAdj_DoubleSpinBox->setSuffix("m/s");
+    ui->speedAdj_DoubleSpinBox->setSuffix(" m/s");
 
     /*振动器*/
-    ui->vibratorButton->setText("振动器已关闭！");
+    ui->vibratorButton->setText("振动器关闭");
     //振动器振动量调节范围为1-100
-    ui->vibratorAdj_spinBox->setRange(1,100);
+    ui->vibratorAdj_spinBox->setRange(20,50);
+    ui->vibratorAdj_spinBox->setValue(40);
     //单步调节值为1
     ui->vibratorAdj_spinBox->setSingleStep(1);
     ui->vibratorAdj_spinBox->setEnabled(false);
@@ -47,15 +54,15 @@ void Page_02::on_vibratorButton_stateChanged(int arg1)
         //初始为unchecked状态
        writePro->sendCommand("03","00","00");
        ui->vibratorAdj_spinBox->setEnabled(false);
-       ui->vibratorButton->setText("振动器已关闭！");
+       ui->vibratorButton->setText("振动器关闭！");
+       qDebug()<<"振动器已关闭！";
     }
     else{
         //点击后为checked状态
-       writePro->sendCommand("03","00","aa");
+       writePro->sendCommand("03","aa","28");
        ui->vibratorAdj_spinBox->setEnabled(true);
-       //当前值为30
-       ui->vibratorAdj_spinBox->setValue(30);
-       ui->vibratorButton->setText("振动器已打开！");
+       ui->vibratorButton->setText("振动器设置：");
+       qDebug()<<"振动器已打开！";
     }
 }
 
@@ -69,9 +76,9 @@ void Page_02::on_vibratorAdj_spinBox_valueChanged(const QString &arg1)
 {
     //将当前文本框的值转换为十六进制
     QString data2 = QString::number(arg1.toInt(), 16).toUpper();
-    qDebug()<<"测试转换结果振动量："<<data2;
+    qDebug()<<"当前振动量："<<arg1;
     //发送振动量修改指令
-    writePro->sendCommand("03","00",data2);
+    writePro->sendCommand("03","aa",data2);
 }
 
 /*

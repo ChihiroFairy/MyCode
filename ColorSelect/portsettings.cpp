@@ -1,5 +1,6 @@
 #include "portsettings.h"
 #include "ui_portsettings.h"
+#include <QDesktopWidget>
 
 /*
  * 单例模式 *
@@ -18,6 +19,11 @@ PortSettings::PortSettings(QWidget *parent) :
     ui(new Ui::PortSettings)
 {
     ui->setupUi(this);
+
+    //窗口显示在屏幕正中间
+    QDesktopWidget *homePage = QApplication::desktop();
+    move((homePage->width()-this->width())/2,(homePage->height()-this->height())/2);
+
     portsets();
     /*返回设置页面*/
     connect(ui->exitButton,&QPushButton::clicked,[=](){emit back();});
@@ -38,7 +44,7 @@ void PortSettings::portsets()
     {
         ui->combo_portName->addItem(info.portName());
         //本机可用串口为ttyS1，索引号为1
-        ui->combo_portName->setCurrentIndex(1);
+        ui->combo_portName->setCurrentIndex(0);
         qDebug()<<"可用串口:"<<info.portName();
     }
     //波特率配置

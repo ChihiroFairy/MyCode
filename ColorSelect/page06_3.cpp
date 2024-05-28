@@ -1,11 +1,17 @@
 #include "page06_3.h"
 #include "ui_page06_3.h"
+#include <QDesktopWidget>
 
 Page06_3::Page06_3(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Page06_3)
 {
     ui->setupUi(this);
+
+    //窗口显示在屏幕正中间
+    QDesktopWidget *homePage = QApplication::desktop();
+    move((homePage->width()-this->width())/2,(homePage->height()-this->height())/2);
+
     /*返回主页面*/
     connect(ui->exitButton,&QPushButton::clicked,[=](){emit back();});
     //******************写处理对象调用***********************
@@ -13,9 +19,9 @@ Page06_3::Page06_3(QWidget *parent) :
     //******************界面显示***********************
 
     //端口自动补全以及默认提示
-    ui->portLineEdit->setPlaceholderText(tr("6666"));//设置默认提示
+    ui->portLineEdit->setPlaceholderText(tr("5000"));//设置默认提示
     QStringList portWordList;
-    portWordList << tr("6666");
+    portWordList << tr("5000");
     QCompleter* portCompleter = new QCompleter(portWordList, this);
     ui->portLineEdit->setCompleter(portCompleter);
 

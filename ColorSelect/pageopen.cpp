@@ -1,11 +1,15 @@
 #include "pageopen.h"
 #include "ui_pageopen.h"
+#include <QDesktopWidget>
 
 PageOpen::PageOpen(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::PageOpen)
 {
     ui->setupUi(this);
+    //窗口显示在屏幕正中间
+    QDesktopWidget *homePage = QApplication::desktop();
+    move((homePage->width()-this->width())/2,(homePage->height()-this->height())/2);
 
     //下料指令标志初始化为false
     started = false;
@@ -18,12 +22,14 @@ PageOpen::PageOpen(QWidget *parent) :
 
     //******************图标样式设置********************************
     ui->startStopButton->setStyleSheet(
-        "QPushButton{"
-        "border-image: url(:/new/icon/icon/start.png);"
-        "background-color:#c3e9e5;"
-        "font:bold 10px;"
-        "color:rgba(0,0,0,100);"
-    "}");
+     "QPushButton{"
+     "border-image: url(:/new/icon/icon/start.png);"
+     "border-radius: 20px;"
+     "border:5px 11c4d4;"
+     "background-color:#ADB4B9;"
+     "border-style:inset;"
+     "color:rgba(0,0,0,100);"
+     "}");
 }
 
 PageOpen::~PageOpen()
@@ -44,7 +50,9 @@ void PageOpen::on_startStopButton_clicked()
         ui->startStopButton->setStyleSheet(
             "QPushButton{"
             "border-image: url(:/new/icon/icon/running.png);"
-            "background-color:#c3e9e5;"
+            "border-radius: 20px;"
+            "border:5px 11c4d4;"
+            "background-color:#ADB4B9;"
             "font:bold 10px;"
             "color:rgba(0,0,0,100);"
         "}");
@@ -57,7 +65,9 @@ void PageOpen::on_startStopButton_clicked()
         ui->startStopButton->setStyleSheet(
          "QPushButton{"
          "border-image: url(:/new/icon/icon/start.png);"
-         "background-color:#c3e9e5;"
+         "border-radius: 20px;"
+         "border:5px 11c4d4;"
+         "background-color:#ADB4B9;"
          "border-style:inset;"
          "color:rgba(0,0,0,100);"
          "}");

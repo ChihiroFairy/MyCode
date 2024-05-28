@@ -10,192 +10,112 @@
     <height>600</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QMainWindow,QWidget{background-color:#1b898b}
-</string>
+   <string notr="true">QMainWindow,QWidget{background-color:#bdc3c7;}</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="camKindButton">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>130</y>
+     <x>140</x>
+     <y>80</y>
      <width>100</width>
      <height>100</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton{
-	border-image: url(:/new/icon/icon/类别.png);
-}</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="camSets_Button">
-   <property name="geometry">
-    <rect>
-     <x>270</x>
-     <y>130</y>
-     <width>100</width>
-     <height>100</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton{
-	border-image: url(:/new/icon/icon/设置-系统设置.png);
-}</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_3">
-   <property name="geometry">
-    <rect>
-     <x>430</x>
-     <y>130</y>
-     <width>100</width>
-     <height>100</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton{
-	border-image: url(:/new/icon/icon/信号.png);
-}</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_7">
-   <property name="geometry">
-    <rect>
-     <x>110</x>
-     <y>300</y>
-     <width>100</width>
-     <height>100</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_8">
-   <property name="geometry">
-    <rect>
-     <x>270</x>
-     <y>300</y>
-     <width>100</width>
-     <height>100</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton{
-border-image: url(:/new/icon/icon/settings.png);
-}</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="imageGetButton">
-   <property name="geometry">
-    <rect>
-     <x>430</x>
-     <y>300</y>
-     <width>100</width>
-     <height>100</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton{
-	border-image: url(:/new/icon/icon/分割.png);
-}</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="saveButton">
-   <property name="geometry">
-    <rect>
-     <x>480</x>
-     <y>480</y>
-     <width>100</width>
-     <height>60</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton{
-	border-image: url(:/new/icon/icon/rectangle.png);
+border-radius: 20px;
+border:5px 11c4d4;
+background-repeat:no-repeat;
+background-color:#bdc3c7;
 }
-QPushButton::pressed{
-border-image: url(:/new/icon/icon/按钮.png);
+QPushButton::hover{
+background:lightgray;
 }</string>
    </property>
    <property name="text">
-    <string>保存修改</string>
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/new/icon/icon/类别.png</normaloff>:/new/icon/icon/类别.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>65</width>
+     <height>65</height>
+    </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="exitButton">
+  <widget class="QPushButton" name="camSigButton">
    <property name="geometry">
     <rect>
-     <x>630</x>
-     <y>480</y>
+     <x>340</x>
+     <y>80</y>
      <width>100</width>
-     <height>60</height>
+     <height>100</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton{
-	border-image: url(:/new/icon/icon/rectangle.png);
+border-radius: 20px;
+border:5px 11c4d4;
+background-repeat:no-repeat;
+background-color:#bdc3c7;
 }
-QPushButton::pressed{
-border-image: url(:/new/icon/icon/按钮.png);
+QPushButton::hover{
+background:lightgray;
 }</string>
    </property>
    <property name="text">
-    <string>返回主界面</string>
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/new/icon/icon/相机.png</normaloff>:/new/icon/icon/相机.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>70</width>
+     <height>70</height>
+    </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="portSet_Button">
+  <widget class="QPushButton" name="sysSettingsButton">
    <property name="geometry">
     <rect>
-     <x>580</x>
-     <y>130</y>
+     <x>540</x>
+     <y>280</y>
      <width>100</width>
      <height>100</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton{
-	border-image: url(:/new/icon/icon/串口设置.png);
+border-radius: 20px;
+border:5px 11c4d4;
+background-repeat:no-repeat;
+background-color:#bdc3c7;
+}
+QPushButton::hover{
+background:lightgray;
 }</string>
    </property>
    <property name="text">
     <string/>
    </property>
-  </widget>
-  <widget class="QPushButton" name="lightAdjButton">
-   <property name="geometry">
-    <rect>
-     <x>580</x>
-     <y>300</y>
-     <width>100</width>
-     <height>100</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton{
-	border-image: url(:/new/icon/icon/照明.png);
-}</string>
-   </property>
-   <property name="text">
-    <string/>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/new/icon/icon/settings.png</normaloff>:/new/icon/icon/settings.png</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -204,40 +124,187 @@ border-image: url(:/new/icon/icon/按钮.png);
     </size>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QPushButton" name="imageGetButton">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>240</y>
+     <y>280</y>
+     <width>100</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius: 20px;
+border:5px 11c4d4;
+background-repeat:no-repeat;
+background-color:#bdc3c7;
+}
+QPushButton::hover{
+background:lightgray;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/new/icon/icon/图像.png</normaloff>:/new/icon/icon/图像.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>80</width>
+     <height>80</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="saveButton">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>520</y>
+     <width>100</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius:10px;
+background:#dedede;
+color:blue;
+}
+QPushButton::pressed{
+background:lightyellow;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>保存修改</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="exitButton">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>520</y>
+     <width>100</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius:10px;
+background:#dedede;
+color:blue;
+}
+QPushButton::pressed{
+background:lightyellow;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="portSet_Button">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>80</y>
+     <width>100</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius: 20px;
+border:5px 11c4d4;
+background-repeat:no-repeat;
+background-color:#bdc3c7;
+}
+QPushButton::hover{
+background:lightgray;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/new/icon/icon/smls icon_串口助手.png</normaloff>:/new/icon/icon/smls icon_串口助手.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>80</width>
+     <height>80</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lightAdjButton">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>280</y>
+     <width>100</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius: 20px;
+border:5px 11c4d4;
+background-repeat:no-repeat;
+background-color:#bdc3c7;
+}
+QPushButton::hover{
+background:lightgray;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/new/icon/icon/照明.png</normaloff>:/new/icon/icon/照明.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>75</width>
+     <height>75</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>190</y>
      <width>51</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+background:none;
+}</string>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;机型&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>280</x>
-     <y>240</y>
-     <width>91</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;相机设置&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>440</x>
-     <y>240</y>
+     <x>350</x>
+     <y>190</y>
      <width>91</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+background:none;
+}</string>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;相机信号&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -246,11 +313,16 @@ border-image: url(:/new/icon/icon/按钮.png);
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>590</x>
-     <y>240</y>
+     <x>550</x>
+     <y>190</y>
      <width>91</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+background:none;
+}</string>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;串口设置&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -259,11 +331,16 @@ border-image: url(:/new/icon/icon/按钮.png);
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>440</x>
-     <y>410</y>
+     <x>150</x>
+     <y>390</y>
      <width>91</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+background:none;
+}</string>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;图像分析&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -272,11 +349,16 @@ border-image: url(:/new/icon/icon/按钮.png);
   <widget class="QLabel" name="label_7">
    <property name="geometry">
     <rect>
-     <x>570</x>
-     <y>410</y>
+     <x>330</x>
+     <y>390</y>
      <width>141</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+background:none;
+}</string>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;恒流源板调节&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -285,30 +367,85 @@ border-image: url(:/new/icon/icon/按钮.png);
   <widget class="QLabel" name="label_8">
    <property name="geometry">
     <rect>
-     <x>280</x>
-     <y>410</y>
+     <x>550</x>
+     <y>390</y>
      <width>91</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+background:none;
+}</string>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;系统设置&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_9">
+  <widget class="QListWidget" name="listWidget_2">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>410</y>
-     <width>91</width>
-     <height>31</height>
+     <x>90</x>
+     <y>50</y>
+     <width>601</width>
+     <height>391</height>
     </rect>
    </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;IPC设置&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   <property name="styleSheet">
+    <string notr="true">QListWidget{
+border-radius:10px;
+background:#B6BCC0;
+}</string>
    </property>
   </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>480</y>
+     <width>800</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>480</y>
+     <width>801</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+background:#AAB1B6;
+}</string>
+   </property>
+  </widget>
+  <zorder>widget</zorder>
+  <zorder>listWidget_2</zorder>
+  <zorder>camKindButton</zorder>
+  <zorder>camSigButton</zorder>
+  <zorder>sysSettingsButton</zorder>
+  <zorder>imageGetButton</zorder>
+  <zorder>saveButton</zorder>
+  <zorder>exitButton</zorder>
+  <zorder>portSet_Button</zorder>
+  <zorder>lightAdjButton</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label_6</zorder>
+  <zorder>label_7</zorder>
+  <zorder>label_8</zorder>
+  <zorder>line</zorder>
  </widget>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections/>
 </ui>

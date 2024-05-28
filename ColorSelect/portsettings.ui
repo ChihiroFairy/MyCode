@@ -6,18 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>300</width>
-    <height>400</height>
+    <width>350</width>
+    <height>450</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow,QWidget{background-color:#bdc3c7;}</string>
+  </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>90</y>
+     <x>80</x>
+     <y>100</y>
      <width>67</width>
      <height>31</height>
     </rect>
@@ -29,8 +32,8 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>140</y>
+     <x>80</x>
+     <y>150</y>
      <width>67</width>
      <height>31</height>
     </rect>
@@ -42,8 +45,8 @@
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>190</y>
+     <x>80</x>
+     <y>200</y>
      <width>67</width>
      <height>31</height>
     </rect>
@@ -55,8 +58,8 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>240</y>
+     <x>80</x>
+     <y>250</y>
      <width>67</width>
      <height>31</height>
     </rect>
@@ -68,8 +71,8 @@
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>280</y>
+     <x>80</x>
+     <y>300</y>
      <width>67</width>
      <height>31</height>
     </rect>
@@ -81,61 +84,106 @@
   <widget class="QComboBox" name="combo_portName">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>90</y>
+     <x>170</x>
+     <y>100</y>
      <width>101</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox{
+border-width:5px;
+font-size:16px;
+border-radius:10px;
+background:lightgray;
+}</string>
    </property>
   </widget>
   <widget class="QComboBox" name="combo_baudRate">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>140</y>
+     <x>170</x>
+     <y>150</y>
      <width>101</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox{
+border-width:5px;
+border-radius:10px;
+font-size:16px;
+background:lightgray;
+}</string>
    </property>
   </widget>
   <widget class="QComboBox" name="combo_dataBits">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>190</y>
+     <x>170</x>
+     <y>200</y>
      <width>101</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox{
+border-width:5px;
+border-radius:10px;
+font-size:16px;
+background:lightgray;
+}</string>
    </property>
   </widget>
   <widget class="QComboBox" name="combo_parityBits">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>240</y>
+     <x>170</x>
+     <y>250</y>
      <width>101</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox{
+border-width:5px;
+border-radius:10px;
+font-size:16px;
+background:lightgray;
+}</string>
    </property>
   </widget>
   <widget class="QComboBox" name="combo_stopBits">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>280</y>
+     <x>170</x>
+     <y>300</y>
      <width>101</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox{
+border-width:5px;
+border-radius:10px;
+font-size:16px;
+background:lightgray;
+}</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>110</x>
      <y>30</y>
      <width>121</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+background:none;
+}</string>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;串口配置&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -144,11 +192,22 @@
   <widget class="QPushButton" name="saveButton">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>330</y>
-     <width>89</width>
-     <height>41</height>
+     <x>60</x>
+     <y>360</y>
+     <width>90</width>
+     <height>50</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius:10px;
+background:#dedede;
+color:blue;
+}
+QPushButton::pressed{
+background:lightyellow;
+}
+</string>
    </property>
    <property name="text">
     <string>保存</string>
@@ -157,16 +216,58 @@
   <widget class="QPushButton" name="exitButton">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>330</y>
-     <width>89</width>
-     <height>41</height>
+     <x>190</x>
+     <y>360</y>
+     <width>90</width>
+     <height>50</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius:10px;
+background:#dedede;
+color:blue;
+}
+QPushButton::pressed{
+background:lightyellow;
+}
+</string>
    </property>
    <property name="text">
     <string>退出</string>
    </property>
   </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>351</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListWidget{
+background:#B6BCC0;
+box-shadow:5px 5px 5px red;
+border-radius:10px;
+}</string>
+   </property>
+  </widget>
+  <zorder>listWidget</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_5</zorder>
+  <zorder>combo_portName</zorder>
+  <zorder>combo_baudRate</zorder>
+  <zorder>combo_dataBits</zorder>
+  <zorder>combo_parityBits</zorder>
+  <zorder>combo_stopBits</zorder>
+  <zorder>label_6</zorder>
+  <zorder>saveButton</zorder>
+  <zorder>exitButton</zorder>
  </widget>
  <resources/>
  <connections/>

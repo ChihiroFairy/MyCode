@@ -1,5 +1,7 @@
 #include "homepage.h"
 #include "ui_homepage.h"
+#include <QGraphicsDropShadowEffect>
+#include <QDesktopWidget>
 
 HomePage::HomePage(QWidget *parent)
     : QMainWindow(parent)
@@ -8,6 +10,68 @@ HomePage::HomePage(QWidget *parent)
     ui->setupUi(this);
 
     this->setWindowTitle("主界面");
+
+    //窗口显示在屏幕正中间
+    QDesktopWidget *homePage = QApplication::desktop();
+    move((homePage->width()-this->width())/2,(homePage->height()-this->height())/2);
+
+    /*图标显示*/
+    //部件阴影效果
+    QGraphicsDropShadowEffect *shadoweffect_00 = new QGraphicsDropShadowEffect;
+    //阴影色, 透明度
+    shadoweffect_00->setColor(QColor(100,100,100));
+    shadoweffect_00->setBlurRadius(10);//阴影模糊半径
+    shadoweffect_00->setOffset(5);    //阴影偏移
+    ui->openButton->setGraphicsEffect(shadoweffect_00);
+
+    QGraphicsDropShadowEffect *shadoweffect_11 = new QGraphicsDropShadowEffect;
+    //阴影色, 透明度
+    shadoweffect_11->setColor(QColor(100,100,100));
+    shadoweffect_11->setBlurRadius(10);//阴影模糊半径
+    shadoweffect_11->setOffset(5);    //阴影偏移
+    ui->closeButton->setGraphicsEffect(shadoweffect_11);
+
+    QGraphicsDropShadowEffect *shadoweffect_1 = new QGraphicsDropShadowEffect;
+    //阴影色, 透明度
+    shadoweffect_1->setColor(QColor(100,100,100));
+    shadoweffect_1->setBlurRadius(10);//阴影模糊半径
+    shadoweffect_1->setOffset(3);    //阴影偏移
+    ui->page01_Button->setGraphicsEffect(shadoweffect_1);
+
+    QGraphicsDropShadowEffect *shadoweffect_2 = new QGraphicsDropShadowEffect;
+    //阴影色, 透明度
+    shadoweffect_2->setColor(QColor(100,100,100));
+    shadoweffect_2->setBlurRadius(10);//阴影模糊半径
+    shadoweffect_2->setOffset(3);    //阴影偏移
+    ui->page02_Button->setGraphicsEffect(shadoweffect_2);
+
+    QGraphicsDropShadowEffect *shadoweffect_3 = new QGraphicsDropShadowEffect;
+    //阴影色, 透明度
+    shadoweffect_3->setColor(QColor(100,100,100));
+    shadoweffect_3->setBlurRadius(10);//阴影模糊半径
+    shadoweffect_3->setOffset(3);    //阴影偏移
+    ui->page03_Button->setGraphicsEffect(shadoweffect_3);
+
+    QGraphicsDropShadowEffect *shadoweffect_4 = new QGraphicsDropShadowEffect;
+    //阴影色, 透明度
+    shadoweffect_4->setColor(QColor(100,100,100));
+    shadoweffect_4->setBlurRadius(10);//阴影模糊半径
+    shadoweffect_4->setOffset(3);    //阴影偏移
+    ui->page04_Button->setGraphicsEffect(shadoweffect_4);
+
+    QGraphicsDropShadowEffect *shadoweffect_5 = new QGraphicsDropShadowEffect;
+    //阴影色, 透明度
+    shadoweffect_5->setColor(QColor(100,100,100));
+    shadoweffect_5->setBlurRadius(10);//阴影模糊半径
+    shadoweffect_5->setOffset(3);    //阴影偏移
+    ui->page05_Button->setGraphicsEffect(shadoweffect_5);
+
+    QGraphicsDropShadowEffect *shadoweffect_6 = new QGraphicsDropShadowEffect;
+    //阴影色, 透明度
+    shadoweffect_6->setColor(QColor(100,100,100));
+    shadoweffect_6->setBlurRadius(10);//阴影模糊半径
+    shadoweffect_6->setOffset(3);    //阴影偏移
+    ui->page06_Button->setGraphicsEffect(shadoweffect_6);
 
      /*跳转至下料页面：pageOpen */
     pageOpen = new PageOpen;
@@ -21,7 +85,8 @@ HomePage::HomePage(QWidget *parent)
     page01 = new Page_01;
     connect(ui->page01_Button,&QPushButton::clicked,[=](){this->hide();page01->show();});
     connect(page01,&Page_01::back,[=](){page01->hide();this->show();});
-    //******************图标样式设置********************************
+
+    //******************页面跳转连接********************************
     /*跳转至产量页面 :Page_02*/
     page02 = new Page_02;
     connect(ui->page02_Button,&QPushButton::clicked,[=](){this->hide();page02->show();});

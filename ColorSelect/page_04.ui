@@ -10,34 +10,59 @@
     <height>600</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QMainWindow,QWidget{background-color:#1b898b}
-</string>
+   <string notr="true">QMainWindow,QWidget{background-color:#bdc3c7;}</string>
   </property>
   <widget class="QPushButton" name="exitButton">
    <property name="geometry">
     <rect>
-     <x>630</x>
-     <y>480</y>
+     <x>650</x>
+     <y>520</y>
      <width>100</width>
-     <height>60</height>
+     <height>50</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius:10px;
+background:#dedede;
+color:blue;
+}
+QPushButton::pressed{
+background:lightyellow;
+}
+</string>
+   </property>
    <property name="text">
-    <string>返回主界面</string>
+    <string>返回</string>
    </property>
   </widget>
   <widget class="QPushButton" name="autoClean_Button">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>160</y>
+     <x>490</x>
+     <y>130</y>
      <width>131</width>
      <height>71</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius:10px;
+background:lightgray;
+}
+QPushButton::hover{
+background:#bdc3c7;
+}</string>
    </property>
    <property name="text">
     <string>定时清灰</string>
@@ -46,11 +71,20 @@
   <widget class="QPushButton" name="manualClean_Button">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>280</y>
+     <x>490</x>
+     <y>250</y>
      <width>131</width>
      <height>71</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius:10px;
+background:lightgray;
+}
+QPushButton::hover{
+background:#bdc3c7;
+}</string>
    </property>
    <property name="text">
     <string>手动清灰</string>
@@ -59,9 +93,9 @@
   <widget class="QSpinBox" name="interval_spinBox">
    <property name="geometry">
     <rect>
-     <x>370</x>
-     <y>170</y>
-     <width>201</width>
+     <x>150</x>
+     <y>140</y>
+     <width>251</width>
      <height>51</height>
     </rect>
    </property>
@@ -80,15 +114,23 @@ QSpinBox::down-button {
     width: 50px;
     height: 50px; 
 }
-</string>
+QSpinBox{
+border-width:5px;
+border-radius:10px;
+font-size:30px;
+background:lightgray;
+}</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QSpinBox" name="cycle_spinBox">
    <property name="geometry">
     <rect>
-     <x>370</x>
-     <y>290</y>
-     <width>201</width>
+     <x>150</x>
+     <y>260</y>
+     <width>251</width>
      <height>51</height>
     </rect>
    </property>
@@ -107,9 +149,69 @@ QSpinBox::down-button {
     width: 50px;
     height: 50px; 
 }
-</string>
+QSpinBox{
+border-width:5px;
+border-radius:10px;
+font-size:30px;
+background:lightgray;
+}</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>90</y>
+     <width>641</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListWidget{
+border-radius:10px;
+background:#B6BCC0;
+}</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>480</y>
+     <width>800</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>480</y>
+     <width>801</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+background:#AAB1B6;
+}</string>
+   </property>
+  </widget>
+  <zorder>widget</zorder>
+  <zorder>listWidget</zorder>
+  <zorder>exitButton</zorder>
+  <zorder>autoClean_Button</zorder>
+  <zorder>manualClean_Button</zorder>
+  <zorder>interval_spinBox</zorder>
+  <zorder>cycle_spinBox</zorder>
+  <zorder>line</zorder>
  </widget>
  <resources/>
  <connections/>

@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow,QDialog{background-color:#bdc3c7;}</string>
+  </property>
   <widget class="QPushButton" name="affirmButton">
    <property name="geometry">
     <rect>
@@ -24,12 +27,27 @@
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton{
-border-image: url(:/new/icon/icon/power.png);
-background-color:#c3e9e5;
+border-radius: 20px;
+border:5px 11c4d4;
+background-repeat:no-repeat;
+background-color:#ADB4B9;
+}
+QPushButton::hover{
+background:lightgray;
 }</string>
    </property>
    <property name="text">
     <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/new/icon/icon/power.png</normaloff>:/new/icon/icon/power.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>80</width>
+     <height>80</height>
+    </size>
    </property>
   </widget>
   <widget class="QPushButton" name="exitButton">
@@ -43,12 +61,27 @@ background-color:#c3e9e5;
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton{
-border-image: url(:/new/icon/icon/cancel_1.png);
-background-color:#c3e9e5;
+border-radius: 20px;
+border:5px 11c4d4;
+background-repeat:no-repeat;
+background-color:#ADB4B9;
+}
+QPushButton::hover{
+background:lightgray;
 }</string>
    </property>
    <property name="text">
     <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/new/icon/icon/cancel_1.png</normaloff>:/new/icon/icon/cancel_1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>80</width>
+     <height>80</height>
+    </size>
    </property>
   </widget>
   <widget class="QLabel" name="label">
@@ -91,6 +124,8 @@ background-color:#c3e9e5;
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections/>
 </ui>

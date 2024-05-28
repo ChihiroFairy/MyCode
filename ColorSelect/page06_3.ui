@@ -10,8 +10,18 @@
     <height>600</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow,QWidget{background-color:#bdc3c7;}
+</string>
   </property>
   <widget class="QTabWidget" name="imageWidget">
    <property name="geometry">
@@ -101,6 +111,15 @@
      <height>41</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius:10px;
+background:lightgray;
+}
+QPushButton::hover{
+background:#AAB1B6;
+}</string>
+   </property>
    <property name="text">
     <string>前主</string>
    </property>
@@ -114,6 +133,15 @@
      <height>41</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius:10px;
+background:lightgray;
+}
+QPushButton::hover{
+background:#AAB1B6;
+}</string>
+   </property>
    <property name="text">
     <string>后主</string>
    </property>
@@ -122,10 +150,19 @@
    <property name="geometry">
     <rect>
      <x>640</x>
-     <y>150</y>
+     <y>220</y>
      <width>91</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius:10px;
+background:lightgray;
+}
+QPushButton::hover{
+background:#AAB1B6;
+}</string>
    </property>
    <property name="text">
     <string>获取图像</string>
@@ -135,10 +172,19 @@
    <property name="geometry">
     <rect>
      <x>480</x>
-     <y>480</y>
-     <width>100</width>
-     <height>60</height>
+     <y>40</y>
+     <width>91</width>
+     <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius:10px;
+background:lightgray;
+}
+QPushButton::hover{
+background:#AAB1B6;
+}</string>
    </property>
    <property name="text">
     <string>监听</string>
@@ -147,11 +193,18 @@
   <widget class="QPushButton" name="exitButton">
    <property name="geometry">
     <rect>
-     <x>630</x>
-     <y>480</y>
+     <x>650</x>
+     <y>520</y>
      <width>100</width>
-     <height>60</height>
+     <height>50</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius:10px;
+background:#dedede;
+color:blue;
+}</string>
    </property>
    <property name="text">
     <string>返回</string>
@@ -181,7 +234,14 @@ QSpinBox::down-button {
     width: 30px;
     height: 30px; 
 }
-</string>
+
+QSpinBox{
+border-width:5px;
+border-radius:10px;
+font-size:25px;
+border-radius:10px;
+background:lightgray;
+}</string>
    </property>
   </widget>
   <widget class="QLabel" name="label">
@@ -201,10 +261,19 @@ QSpinBox::down-button {
    <property name="geometry">
     <rect>
      <x>640</x>
-     <y>210</y>
+     <y>280</y>
      <width>91</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius:10px;
+background:lightgray;
+}
+QPushButton::hover{
+background:#AAB1B6;
+}</string>
    </property>
    <property name="text">
     <string>导出图像</string>
@@ -213,8 +282,8 @@ QSpinBox::down-button {
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>40</y>
+     <x>630</x>
+     <y>100</y>
      <width>51</width>
      <height>31</height>
     </rect>
@@ -226,8 +295,8 @@ QSpinBox::down-button {
   <widget class="QLineEdit" name="portLineEdit">
    <property name="geometry">
     <rect>
-     <x>460</x>
-     <y>40</y>
+     <x>630</x>
+     <y>140</y>
      <width>113</width>
      <height>25</height>
     </rect>

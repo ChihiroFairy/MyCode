@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include "writeprocess.h"
+#include "readprocess.h"
 
 namespace Ui {
 class Page_03;
@@ -25,11 +26,19 @@ private slots:
     void on_multiChe_Button_clicked();
 
     void on_saveButton_clicked();
+    void checkSlot();
+
+    //void updateDisplay(const QByteArray &data);
 
 private:
     Ui::Page_03 *ui;
     //创建 写_预处理 对象
     writeProcess *writePro;
+    readProcess *readPro;
+
+    QTimer* timer;  // 在这里声明 QTimer 指针
+    int dec;
+    bool inProgress;  // 用于跟踪函数是否正在执行的标志
 };
 
 #endif // PAGE_03_H

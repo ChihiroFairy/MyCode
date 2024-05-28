@@ -10,31 +10,47 @@
     <height>600</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QMainWindow,QWidget{background-color:#1b898b}
-</string>
+   <string notr="true">QMainWindow,QWidget{background-color:#bdc3c7;}</string>
   </property>
   <widget class="QPushButton" name="exitButton">
    <property name="geometry">
     <rect>
-     <x>630</x>
-     <y>480</y>
+     <x>650</x>
+     <y>520</y>
      <width>100</width>
-     <height>60</height>
+     <height>50</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius:10px;
+background:#dedede;
+color:blue;
+}
+QPushButton::pressed{
+background:lightyellow;
+}
+</string>
+   </property>
    <property name="text">
-    <string>返回主界面</string>
+    <string>返回</string>
    </property>
   </widget>
   <widget class="QSpinBox" name="customDelay_spin">
    <property name="geometry">
     <rect>
-     <x>390</x>
-     <y>40</y>
+     <x>230</x>
+     <y>50</y>
      <width>231</width>
      <height>61</height>
     </rect>
@@ -54,14 +70,23 @@ QSpinBox::down-button {
     width: 50px;
     height: 50px; 
 }
-</string>
+
+QSpinBox{
+border-width:5px;
+font-size:30px;
+border-radius:10px;
+background:lightgray;
+}</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QSpinBox" name="modelDelay_spin">
    <property name="geometry">
     <rect>
-     <x>390</x>
-     <y>120</y>
+     <x>230</x>
+     <y>140</y>
      <width>231</width>
      <height>61</height>
     </rect>
@@ -81,14 +106,22 @@ QSpinBox::down-button {
     width: 50px;
     height: 50px; 
 }
-</string>
+QSpinBox{
+border-width:5px;
+font-size:30px;
+border-radius:10px;
+background:lightgray;
+}</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QSpinBox" name="reTime_spin">
    <property name="geometry">
     <rect>
-     <x>390</x>
-     <y>190</y>
+     <x>230</x>
+     <y>230</y>
      <width>231</width>
      <height>61</height>
     </rect>
@@ -108,14 +141,22 @@ QSpinBox::down-button {
     width: 50px;
     height: 50px; 
 }
-</string>
+QSpinBox{
+border-width:5px;
+border-radius:10px;
+font-size:30px;
+background:lightgray;
+}</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QSpinBox" name="time_spin">
    <property name="geometry">
     <rect>
-     <x>390</x>
-     <y>270</y>
+     <x>230</x>
+     <y>320</y>
      <width>231</width>
      <height>61</height>
     </rect>
@@ -135,43 +176,75 @@ QSpinBox::down-button {
     width: 50px;
     height: 50px; 
 }
-</string>
+QSpinBox{
+border-width:5px;
+border-radius:10px;
+font-size:30px;
+background:lightgray;
+}</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QPushButton" name="singleChe_Button">
    <property name="geometry">
     <rect>
-     <x>220</x>
-     <y>370</y>
-     <width>131</width>
+     <x>530</x>
+     <y>230</y>
+     <width>140</width>
      <height>61</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius:10px;
+background:lightgray;
+}
+QPushButton::hover{
+background:#AAB1B6;
+}</string>
+   </property>
    <property name="text">
-    <string>单检</string>
+    <string>喷阀单检</string>
    </property>
   </widget>
   <widget class="QPushButton" name="multiChe_Button">
    <property name="geometry">
     <rect>
-     <x>450</x>
-     <y>370</y>
-     <width>131</width>
+     <x>530</x>
+     <y>309</y>
+     <width>140</width>
      <height>61</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius:10px;
+background:lightgray;
+}
+QPushButton::hover{
+background:#AAB1B6;
+}</string>
+   </property>
    <property name="text">
-    <string>多检</string>
+    <string>快速自检</string>
    </property>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>50</y>
+     <x>90</x>
+     <y>60</y>
      <width>111</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border-radius:10px;
+background:#bdc3c7;
+}</string>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;常规延时：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -180,11 +253,17 @@ QSpinBox::down-button {
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>130</y>
+     <x>90</x>
+     <y>150</y>
      <width>111</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border-radius:10px;
+background:#bdc3c7;
+}</string>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;模型延时：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -193,11 +272,17 @@ QSpinBox::down-button {
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>200</y>
+     <x>90</x>
+     <y>240</y>
      <width>111</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border-radius:10px;
+background:#bdc3c7;
+}</string>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;重吹时间：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -206,11 +291,17 @@ QSpinBox::down-button {
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>280</y>
+     <x>90</x>
+     <y>330</y>
      <width>111</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border-radius:10px;
+background:#bdc3c7;
+}</string>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;吹气时间：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -220,15 +311,181 @@ QSpinBox::down-button {
    <property name="geometry">
     <rect>
      <x>480</x>
-     <y>480</y>
+     <y>520</y>
      <width>100</width>
-     <height>60</height>
+     <height>50</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius:10px;
+background:#dedede;
+color:blue;
+}
+QPushButton::pressed{
+background:lightyellow;
+}
+</string>
    </property>
    <property name="text">
     <string>保存修改</string>
    </property>
   </widget>
+  <widget class="QSpinBox" name="airvalve_spin">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>120</y>
+     <width>171</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox::up-button {
+	subcontrol-origin:border;
+    subcontrol-position:right;
+	image: url(:/new/icon/icon/向右.png);
+    width: 35px;
+    height: 35px;       
+}
+QSpinBox::down-button {
+	subcontrol-origin:border;
+    subcontrol-position:left;
+	image: url(:/new/icon/icon/向左.png);
+    width: 35px;
+    height: 35px; 
+}
+
+QSpinBox{
+border-width:3px;
+border-radius:5px;
+font:bold;
+font-size:30px;
+background:lightgray;
+}</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>30</y>
+     <width>671</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListWidget{
+border-radius:10px;
+background:#B6BCC0;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>60</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border-width:5px;
+border-radius:10px;
+font-size:25px;
+background:#bdc3c7;
+}</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;在检喷阀序号&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>50</y>
+     <width>201</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListWidget{
+background:#bdc3c7;
+border-radius:10px;
+}</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>200</y>
+     <width>191</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">Line{
+background:#bdc3c7;
+}</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>480</y>
+     <width>800</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>480</y>
+     <width>801</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+background:#AAB1B6;
+}</string>
+   </property>
+  </widget>
+  <zorder>widget</zorder>
+  <zorder>listWidget</zorder>
+  <zorder>exitButton</zorder>
+  <zorder>customDelay_spin</zorder>
+  <zorder>modelDelay_spin</zorder>
+  <zorder>reTime_spin</zorder>
+  <zorder>time_spin</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_4</zorder>
+  <zorder>saveButton</zorder>
+  <zorder>listWidget_2</zorder>
+  <zorder>airvalve_spin</zorder>
+  <zorder>label_6</zorder>
+  <zorder>line</zorder>
+  <zorder>line_2</zorder>
+  <zorder>singleChe_Button</zorder>
+  <zorder>multiChe_Button</zorder>
  </widget>
  <resources/>
  <connections/>

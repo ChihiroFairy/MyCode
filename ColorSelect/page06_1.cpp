@@ -1,11 +1,17 @@
 #include "page06_1.h"
 #include "ui_page06_1.h"
+#include <QDesktopWidget>
 
 Page06_1::Page06_1(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Page06_1)
 {
     ui->setupUi(this);
+
+    //窗口显示在屏幕正中间
+    QDesktopWidget *homePage = QApplication::desktop();
+    move((homePage->width()-this->width())/2,(homePage->height()-this->height())/2);
+
     /*返回主页面*/
     connect(ui->exitButton,&QPushButton::clicked,[=](){emit back();});
     //******************写处理对象调用***********************

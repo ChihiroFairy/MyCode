@@ -89,7 +89,7 @@ bool readProcess::verifyChecksum(const QByteArray &data)
 
     // 异或校验
     char xorResult = 0;
-    for (int i = 0; i < 4; ++i) {
+    for (int i = 1; i < 4; ++i) {
         xorResult ^= data.at(i);
     }
 
@@ -123,6 +123,10 @@ void readProcess::processFrame(const QByteArray &payload)
 
     case 0x02:
         emit data_Page_02(receData);
+        break;
+
+    case 0x50:
+        emit data_Page_05(receData);
         break;
 
     // Handle other function codes...
